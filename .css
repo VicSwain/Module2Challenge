@@ -78,7 +78,7 @@ header nav ul li {
     -webkit-background-clip:text; 
     -webkit-text-fill-color:#FF69B4; 
     margin-top: 200px; 
-    font-size: 65px; 
+    font-size: 50px; 
     text-align: end; 
     font-weight: bold; 
     text-transform: uppercase; 
@@ -88,9 +88,11 @@ header nav ul li {
     color: #FF69B4;
 }
 .highlights {
-    border-left: solid #FF69B4 2rem;
     color: white;
     margin-top: 10px #022906;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .highlights h2 {
@@ -98,18 +100,65 @@ header nav ul li {
     margin: 20px;
 }
 
+.aboutmecontent {
+    border-left: #FF69B4 2rem;
+    box-sizing: border-box;
+}
+
 .aboutme {
     display: flex;
-    justify-content: center;
-    align-items: baseline;
+    justify-content: left;
+    align-items: center;
+}
+
+.aboutme p {
+    border-left: solid #FF69B4 2rem;
+    padding-left: 1%;
 }
 
 .aboutme h2 p {
     text-wrap: wrap;
+    
 }
 
 .work {
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+    justify-content: left;
+    align-items: center;
+}
+
+.work .workcontent {
+    display: inline-block;
+}
+
+.work ul li {
+    list-style-type: none;
+    border-left: solid #FF69B4 2rem;
+    padding-left: 5%;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content:left;
+    
+}
+
+
+.contact .contactcontent {
+    display: inline-block;
+}
+
+.contact ul {
+    display: inline;
+    border-left: solid #FF69B4 2rem;
+}
+
+.contact ul li {
+    border-bottom:1px solid #FF69B4;
+    padding:5px;
+    margin:2px;
+    list-style-type: none;
+    display: inline-block;
+    
 }
