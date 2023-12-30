@@ -92,8 +92,10 @@ header nav ul li {
     margin-top: 10px #022906;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    
+    justify-content: left;
 }
+
 
 .highlights h2 {
     padding-bottom: 10px;
@@ -103,6 +105,7 @@ header nav ul li {
 .aboutmecontent {
     border-left: #FF69B4 2rem;
     box-sizing: border-box;
+    flex: 1;
 }
 
 .aboutme {
@@ -127,13 +130,20 @@ header nav ul li {
     align-items: center;
 }
 
-.work .workcontent {
-    display: inline-block;
+.highlightscontent {
+    border-left: #FF69B4 2rem;
+    box-sizing: border-box;
+    flex: 1;
+    display: flex;
+        flex-direction: column;
 }
 
+.work ul {
+    border-left: solid #FF69B4 2rem;
+    padding-left: 1%;
+}
 .work ul li {
     list-style-type: none;
-    border-left: solid #FF69B4 2rem;
     padding-left: 5%;
 }
 
@@ -144,10 +154,6 @@ header nav ul li {
     
 }
 
-
-.contact .contactcontent {
-    display: inline-block;
-}
 
 .contact ul {
     display: inline;
