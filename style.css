@@ -3,23 +3,19 @@
     padding: 0;
     margin: 0;
     background-color: #022906;
+    list-style-type: none;
 }
 
-h1 {
-    color: black;
-    
-    
+
+a, h1 {
+    color: lightgreen;
 }
 
 header h1 .myname {
     color:#FF69B4;
     justify-content: space-between;
 }
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
+
 
 body {
     background-color: #d9dcd6;
@@ -43,7 +39,6 @@ header h1 {
 header nav {
     padding-top: 15px;
     margin-right: 20px;
-    
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
@@ -63,7 +58,7 @@ header nav ul li {
     height: 500px;
     width: 100%;
     position: relative;
-    background-image:url(greenbg.jpg);
+    background-image:url(B&GImage1.jpg);
     background-size: cover;
     background-position: center;
     display: inline-block;
@@ -77,94 +72,83 @@ header nav ul li {
     background-repeat: repeat; 
     -webkit-background-clip:text; 
     -webkit-text-fill-color:#FF69B4; 
-    margin-top: 200px; 
+    margin-top: 400px; 
     font-size: 50px; 
     text-align: end; 
-    font-weight: bold; 
+    font-weight: bolder; 
     text-transform: uppercase; 
     font-family: 'Steelfish Rg', 'helvetica neue', helvetica, arial, sans-serif; 
-    font-weight: 400; 
+    font-weight: 550; 
     -webkit-font-smoothing: antialiased;
     color: #FF69B4;
 }
-.highlights {
-    color: white;
-    margin-top: 10px #022906;
+.aboutme, .work, .contact  {
+    color: lightgreen;
     display: flex;
-    flex-direction: column;
-    
-    justify-content: left;
+    flex-direction: row;   
+    align-items: baseline;
+    padding-bottom: 5px;
+    padding-top: 10px;
 }
 
-
-.highlights h2 {
-    padding-bottom: 10px;
-    margin: 20px;
-}
-
-.aboutmecontent {
-    border-left: #FF69B4 2rem;
+.borderimage {
+    border-right:solid #FF69B4 2rem;
+    display: flex;  
     box-sizing: border-box;
-    flex: 1;
-}
-
-.aboutme {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-}
-
-.aboutme p {
-    border-left: solid #FF69B4 2rem;
-    padding-left: 1%;
-}
-
-.aboutme h2 p {
-    text-wrap: wrap;
-    
-}
-
-.work {
-    display: flex;
-    justify-content: left;
-    align-items: center;
+    justify-content: flex-start;
+    padding-left: 2px;
+    padding-right: 5px;
 }
 
 .highlightscontent {
-    border-left: #FF69B4 2rem;
-    box-sizing: border-box;
+    display: flex;
+    flex-direction:row;  
+    margin-bottom: 10px; 
     flex: 1;
-    display: flex;
-        flex-direction: column;
+    box-sizing: border-box;
 }
 
-.work ul {
-    border-left: solid #FF69B4 2rem;
-    padding-left: 1%;
-}
-.work ul li {
-    list-style-type: none;
-    padding-left: 5%;
+.highlightscontent ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 2px;
+    gap: 10px;
 }
 
-.contact {
-    display: flex;
-    align-items: center;
-    justify-content:left;
+.highlightscontent ul li:hover {
+    box-shadow: 3px 3px #FF69B4, 0em 0 .4em lightgreen;
+}
+
+
+
+.highlightscontent ul li::selection {
+    color: red;
+    
+}
+.workbox {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
     
 }
 
+.one {  
+    grid-column:1 / 3;
+    grid-row:1 / 3;
+ }
 
-.contact ul {
-    display: inline;
-    border-left: solid #FF69B4 2rem;
+.two {
+    grid-column: 4 / 6;
+    grid-row: 1 / 3;
+    background-image: url();
 }
 
-.contact ul li {
-    border-bottom:1px solid #FF69B4;
-    padding:5px;
-    margin:2px;
-    list-style-type: none;
-    display: inline-block;
-    
+.three {
+
+}
+
+.one:hover, .two:hover, .three:hover, .four:hover, .five:hover {
+    box-shadow: 3px 3px #FF69B4, 0em 0 .4em lightgreen;
 }
