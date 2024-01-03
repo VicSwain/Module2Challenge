@@ -135,17 +135,34 @@ header nav ul li {
 }
 
 .one {
-    justify-self: stretch;
+    grid-row: span;
+    background-image: url(work1.png);
+    background-size: cover;
 }
 
-.two, .three {
+.two { 
     grid-row: 2;
-    background-image: url();
+    background-image: url(work2.png);
+    background-size: cover;
 }
 
-.four, .five {
-    grid-row: 3;
+.three {
+    grid-row: 2;
+    background-image: url(work3.jpg);
+    background-size: cover;
 }
+
+.four {
+    grid-row: 3;
+    background-image: url(work4.png);
+    background-size: cover;
+}
+
+.five {
+    grid-row: 3;
+    background-image: url(work5.jpeg);
+    background-size: cover;
+}   
 
 .one:hover, .two:hover, .three:hover, .four:hover, .five:hover {
     box-shadow: 3px 3px #FF69B4, 0em 0 .4em lightgreen;
