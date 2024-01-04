@@ -92,7 +92,7 @@ header nav ul li {
 }
 
 .borderimage {
-    border-right:solid #FF69B4 2rem;
+    border-right: solid #51479B 2rem;
     display: flex;  
     box-sizing: border-box;
     justify-content: flex-start;
@@ -114,6 +114,7 @@ header nav ul li {
     flex-direction: row;
     padding: 2px;
     gap: 10px;
+    width: 100%;
 }
 
 .highlightscontent ul li:hover {
@@ -131,15 +132,24 @@ header nav ul li {
     grid-auto-columns: 50%;
     gap: 10px;
     grid-auto-rows: minmax(300px, auto);
-    
+    width: 100%;    
+    text-align: justify;
 }
 
 .one {
-    grid-row: span;
+    grid-row: 1 / 2;
     background-image: url(work1.png);
-    background-size: cover;
+    background-size: cover;   
+    width: 200%;
+    
 }
 
+.one aside {
+    position: absolute;
+    bottom: 3;
+    left: 3;
+
+}
 .two { 
     grid-row: 2;
     background-image: url(work2.png);
@@ -167,3 +177,4 @@ header nav ul li {
 .one:hover, .two:hover, .three:hover, .four:hover, .five:hover {
     box-shadow: 3px 3px #FF69B4, 0em 0 .4em lightgreen;
 }
+
