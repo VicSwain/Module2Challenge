@@ -1,3 +1,4 @@
+/* Global CSS Variables defined */
 :root {
     --dark-colorA: #022906;
     --dark-colorB:var(--dark-colorA);
@@ -56,7 +57,7 @@ header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
-
+/* Banner image and positioning */
 .win {
     height: 500px;
     width: 100%;
@@ -68,13 +69,11 @@ header nav ul li {
     justify-content: right;
     
 }
-
+/* Banner text, styling, and positioning */
 .wintxt {
-    /* reverse engineer what all of this is when you have time */
     text-align: right;
     background-repeat: repeat; 
-    -webkit-background-clip:text; 
-    -webkit-text-fill-color: var(--light-colorB); 
+    background-clip:text; 
     margin-top: 400px; 
     font-size: 50px; 
     text-align: end; 
@@ -85,13 +84,14 @@ header nav ul li {
     -webkit-font-smoothing: antialiased;
     color: var(--light-colorB);
 }
+/* Flexbox defined for section ID for layout. ID used to selection from nav bar */
 #aboutme, #work, #contact  {
     color: var(--light-colorA);
     display: flex;
     flex-direction: row;   
     align-items: baseline;
 }
-
+/* Border between h2 and respective content */
 .borderimage {
     border-right: solid #51479B 2rem;
     display: flex;  
@@ -119,10 +119,15 @@ header nav ul li {
     width: 100%;
 }
 
+.highlightscontent h2 {
+    display: flex;
+    align-items: center;
+}
+/* Pseudoclass for mouse hover and styling*/
 .highlightscontent ul li:hover {
     box-shadow: 3px 3px var(--light-colorB), 0em 0 .4em var(--light-colorA);
 }
-
+/* Grid layout for work */
 .workbox {
     display: grid;
     grid-auto-columns: 50%;
@@ -136,7 +141,7 @@ header nav ul li {
     background: none;
     color: var(--color-null);
 }
-
+/* BackGround image and gride placement for workbox container */
 #one {
     grid-row: 1 / 2;
     background-image: url(work1.png);
@@ -168,7 +173,57 @@ header nav ul li {
     background-image: url(work6.jpg);
     background-size: cover;
 }   
-
+/* Mouse hover styling for work */
 #one:hover, #two:hover, #three:hover, #four:hover, #five:hover {
     box-shadow: 3px 3px var(--light-colorB), 0em 0 .4em var(--light-colorB);
 }
+
+::selection {
+    color: black;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    header h1 {
+      font-size: 36px;
+    }
+  
+    header nav {
+      margin-top: 15px;
+      margin-right: 0;
+    }
+  
+    header nav ul li {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    .win {
+      height: 300px;
+      margin-top: 20px;
+    }
+  
+    .wintxt {
+      margin-top: 200px;
+    }
+  
+    .highlightscontent {
+      flex-direction: column;
+    }
+  
+    .highlightscontent ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .workbox {
+      grid-auto-columns: 100%;
+    }
+  }
