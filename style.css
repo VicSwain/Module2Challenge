@@ -1,26 +1,34 @@
+:root {
+    --dark-colorA: #022906;
+    --dark-colorB:var(--dark-colorA);
+    --light-colorA: lightgreen;
+    --light-colorB: #FF69B4;
+    --color-null: #ffffff;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    background-color: #022906;
+    background-color: var(--dark-colorA);
     list-style-type: none;
 }
 
 
 a, h1 {
-    color: lightgreen;
+    color:var(--light-colorA);
     font-stretch: expanded;
 }
 
 header h1 .myname {
-    color:#FF69B4;
+    color: var(--light-colorB);
     
 }
 
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #ffffff;
+    color: var(--color-null);
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -66,7 +74,7 @@ header nav ul li {
     text-align: right;
     background-repeat: repeat; 
     -webkit-background-clip:text; 
-    -webkit-text-fill-color:#FF69B4; 
+    -webkit-text-fill-color: var(--light-colorB); 
     margin-top: 400px; 
     font-size: 50px; 
     text-align: end; 
@@ -75,10 +83,10 @@ header nav ul li {
     font-family: 'Steelfish Rg', 'helvetica neue', helvetica, arial, sans-serif; 
     font-weight: 550; 
     -webkit-font-smoothing: antialiased;
-    color: #FF69B4;
+    color: var(--light-colorB);
 }
 #aboutme, #work, #contact  {
-    color: lightgreen;
+    color: var(--light-colorA);
     display: flex;
     flex-direction: row;   
     align-items: baseline;
@@ -112,15 +120,9 @@ header nav ul li {
 }
 
 .highlightscontent ul li:hover {
-    box-shadow: 3px 3px #FF69B4, 0em 0 .4em lightgreen;
+    box-shadow: 3px 3px var(--light-colorB), 0em 0 .4em var(--light-colorA);
 }
 
-
-
-.highlightscontent ul li::selection {
-    color: red;
-    
-}
 .workbox {
     display: grid;
     grid-auto-columns: 50%;
@@ -132,7 +134,7 @@ header nav ul li {
 
 .workbox a {
     background: none;
-    color: white;
+    color: var(--color-null);
 }
 
 #one {
@@ -168,5 +170,5 @@ header nav ul li {
 }   
 
 #one:hover, #two:hover, #three:hover, #four:hover, #five:hover {
-    box-shadow: 3px 3px #FF69B4, 0em 0 .4em lightgreen;
+    box-shadow: 3px 3px var(--light-colorB), 0em 0 .4em var(--light-colorB);
 }
