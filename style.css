@@ -9,27 +9,17 @@
 
 a, h1 {
     color: lightgreen;
+    font-stretch: expanded;
 }
 
 header h1 .myname {
     color:#FF69B4;
-    justify-content: space-between;
-}
-
-
-body {
-    background-color: #d9dcd6;
+    
 }
 
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
-    color: #ffffff;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    }
 
 header h1 {
     display: inline-block;
@@ -87,8 +77,6 @@ header nav ul li {
     display: flex;
     flex-direction: row;   
     align-items: baseline;
-    padding-bottom: 5px;
-    padding-top: 10px;
 }
 
 .borderimage {
@@ -98,12 +86,13 @@ header nav ul li {
     justify-content: flex-start;
     padding-left: 2px;
     padding-right: 5px;
+    
 }
 
 .highlightscontent {
     display: flex;
     flex-direction:row;  
-    margin-bottom: 10px; 
+    padding-bottom: 10px; 
     flex: 1;
     box-sizing: border-box;
 }
@@ -136,45 +125,44 @@ header nav ul li {
     text-align: justify;
 }
 
-.one {
+.workbox a {
+    background: none;
+    color: white;
+}
+
+#one {
     grid-row: 1 / 2;
     background-image: url(work1.png);
     background-size: cover;   
-    width: 200%;
-    
+    width: 200%;   
 }
 
-.one aside {
-    position: absolute;
-    bottom: 3;
-    left: 3;
 
-}
-.two { 
+#two { 
     grid-row: 2;
     background-image: url(work2.png);
     background-size: cover;
 }
 
-.three {
+#three {
     grid-row: 2;
     background-image: url(work3.jpg);
     background-size: cover;
 }
 
-.four {
+#four {
     grid-row: 3;
     background-image: url(work4.png);
     background-size: cover;
 }
 
-.five {
+#five {
     grid-row: 3;
-    background-image: url(work5.jpeg);
+    background-image: url(work6.jpg);
     background-size: cover;
 }   
 
-.one:hover, .two:hover, .three:hover, .four:hover, .five:hover {
+#one:hover, #two:hover, #three:hover, #four:hover, #five:hover {
     box-shadow: 3px 3px #FF69B4, 0em 0 .4em lightgreen;
 }
 
