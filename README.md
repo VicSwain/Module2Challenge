@@ -1,22 +1,14 @@
-# Module2Challenge
+# Build a portfolio
 
+## Purpose
+I wanted to start building a live responsive portfilo to build upon as I start looking for employment as a full stack developer. I wanted to hone my skills on HTML for page structure, and CSS for styling. I focused on learning Flexbox and CSS Grid for the layout of this page. I wanted to ensure a color scheme that was appeling to look at but still showed "me" in the style. I had to overcome the placement of the gride that is the class workbox. The values for grid rows and columns was an area of troubleshooting and learning for me. I am still working to overcome the borderimage area to ensure it lines up going down the page. I also utilized CSS variable to refrain from DRY programming and media queries to ensure the page will work on all screens. 
 
-## User Story
-AS AN employer
-I WANT to view a potential employee's deployed portfolio of work samples
-SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
+### Credits
+I pair programmed part of this with Noah Kagney and received guidance on CSS Grid from Maury Hughes
+I used a CSS reset template Josh W Comeau
 
-### Acceptance Criteria
-GIVEN I need to sample a potential employee's previous work
-WHEN I load their portfolio
-THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
-WHEN I click one of the links in the navigation
-THEN the UI scrolls to the corresponding section
-WHEN I click on the link to the section about their work
-THEN the UI scrolls to a section with titled images of the developer's applications
-WHEN I am presented with the developer's first application
-THEN that application's image should be larger in size than the others
-WHEN I click on the images of the applications
-THEN I am taken to that deployed application
-WHEN I resize the page or view the site on various screens and devices
-THEN I am presented with a responsive layout that adapts to my viewport
+#### Screenshot
+![Webpage Screenshot](Mod2Pic.jpeg)
+
+##### URL
+https://vicswain.github.io/Module2Challenge/
